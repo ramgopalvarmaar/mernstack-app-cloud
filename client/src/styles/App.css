@@ -1,0 +1,212 @@
+.App {
+  background: rgb(75, 191, 107);
+  height: 100vh;
+}
+
+.Header {
+  background: rgba(0, 0, 0, 0.15);
+  color: white;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  text-align: center;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+body{
+  font-family:"Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+#Menu, .list-group-item{
+  background-color: black;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navLabel{
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+
+.list-group-item-action:focus, .list-group-item-action:hover{
+  background-color: #0a243d;
+}
+
+.list-group-item.active{
+  z-index: 2;
+  color: #9AB39A;
+  background-color: black;
+  border-color: black;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  background-color: #9AB39A;
+  
+}
+
+#col1{
+  background-color: #232f3e;
+  color: #fff;
+  font-size: 26px;
+  height: 112px;
+  text-align: left;
+  align-items: baseline;
+}
+#HeaderText{
+  position:absolute;                  
+  bottom:0;                          
+}
+#TabColumn{
+  height: 112px;
+  background-color: #eaeff1;
+  align-items: flex-end;
+}
+#Avatar{
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  background-color: #eaeff1;
+}
+#AvatarBtn{
+  border-color:  #eaeff1;;
+}
+
+.tab-pane.active { animation-name: fadeIn; animation-duration: 300ms; animation-timing-function: linear; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+body.modal-open > #root  {
+  filter: blur(3px);
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 22px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #9AB39A;;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #eaeff1;
+  padding-top: 8%;
+  padding-right: 2%;
+  padding-bottom: 0px;
+  padding-left: 2%;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #bdc3c7;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #52585a;
+  padding-left: 10%;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  outline: none !important;
+  cursor:pointer; 
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.bm-menu-wrap {
+  transition: 'reveal' !important;
+}
+
+.menu-icon{
+  margin-right: 38px;
+}
+
+.avatars {
+  display: flex;
+  list-style-type: none;
+  margin: auto;
+  padding: 0px;
+  flex-direction: row;
+  right: 100px;
+  top: 15px;
+  position: absolute;
+}
+.avatars__item {
+  background-color: #596376;
+  border: 2px solid #1f2532;
+  border-radius: 100%;
+  color: #ffffff;
+  display: block;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  height: 40px;
+  width: 40px;
+  line-height: 30px;
+  text-align: center;
+  transition: margin 0.1s ease-in-out;
+  overflow: hidden;
+  margin-left: -16px;
+}
+.avatars__item:first-child {
+  z-index: 5;
+}
+.avatars__item:nth-child(2) {
+  z-index: 4;
+}
+.avatars__item:nth-child(3) {
+  z-index: 3;
+}
+.avatars__item:nth-child(4) {
+  z-index: 2;
+}
+.avatars__item:nth-child(5) {
+  z-index: 1;
+}
+.avatars__item:last-child {
+  z-index: 0;
+}
+.avatars__item img {
+  width: 100%;
+}
+.avatars:hover .avatars__item {
+  margin-right: 10px;
+}
