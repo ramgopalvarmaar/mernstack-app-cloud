@@ -1,12 +1,5 @@
 ### Live Demo running in [Google Cloud Platform](https://mernstack-app-290207.el.r.appspot.com/)
 
-
-### A quite exhaustive React, Node/Express, MongoDB App for rendering tabular data with pagination with full Create, Edit, Delete functionality. Also, have implemented filter functionality for text-based search and date-range based search. Have used Material-UI extensively across the app. Functinality to download the data in `.csv` format.
-
-##### Quite a few standard and simple tests have also been implemented with `jest`
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ### To launch this project in the local machine.
 
 run `npm install` in both the server directory, which in this project is the root directory (`./`) and also `./client` directories separately, which will install all the npm packages for server and client respectively.
