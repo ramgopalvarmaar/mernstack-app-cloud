@@ -159,7 +159,7 @@ class Calender extends Component {
           <h1>{this.state.isBusy ? "BUSY" : "FREE"}</h1>
         </div>
         <div className="upcoming-meetings">
-          <div className="current-time">{time}</div>
+          <div className="current-time">{time}, 2020</div>
           <h1>Upcoming Meetings</h1>
           <div className="list-group">
             {this.state.isLoading && loadingState}

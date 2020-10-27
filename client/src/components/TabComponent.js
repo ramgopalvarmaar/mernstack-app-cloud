@@ -11,6 +11,7 @@ import WorkVoiceNotes from './voice-notes/WorkVoiceNotes';
 import Calendar from './CalenderComponent';
 import store from "../store";
 import Calender from './CalenderComponent';
+import TODO from './todo/TodoForm';
 
 const Tab = (props) => {
   let user = store.getState().userProfile;
@@ -131,7 +132,7 @@ const Tab = (props) => {
           {activeMenu === "notes" && <PersonalContent/>}
           {activeMenu === "voice-notes" && <VoiceNotes />}
           {activeMenu === "reminder" && <h1> Personal Reminders here </h1>}
-          {activeMenu === "to-do" && <h1> Personal To-Do here </h1>}
+          {activeMenu === "to-do" && <TODO/> }
           {activeMenu === "calendar" && <Calender />}
           {activeMenu === "links" && <PersonalLink/>}
           </div>
