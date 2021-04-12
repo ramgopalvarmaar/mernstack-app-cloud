@@ -46,3 +46,5 @@ Launches the test runner in the interactive watch mode.<br>
 ``cd client`` and then run
 
 ``npm run analyze``
+
+Screenshot 2021-04-12 at 5.23.49 PM![image](https://user-images.githubusercontent.com/20518293/114390465-f235de80-9bb3-11eb-9c3f-36e64787bcbd.png)
